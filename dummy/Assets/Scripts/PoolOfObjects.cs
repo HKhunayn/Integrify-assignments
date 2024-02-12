@@ -8,6 +8,8 @@ public class PoolOfObjects : MonoBehaviour
     [SerializeField] float timeToReCall = 4f;
     [SerializeField] float numberOfObjects = 50f;
     [SerializeField] Vector3 force;
+    [SerializeField] int M_speed;
+    [SerializeField] float m_blabla;
     List<GameObject> objs = new List<GameObject>();
     void Start()
     {

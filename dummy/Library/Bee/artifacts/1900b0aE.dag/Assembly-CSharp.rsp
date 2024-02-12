@@ -390,6 +390,7 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2023.2.9f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2023.2.9f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/ddd.cs"
+"Assets/Scripts/BasicsMovment.cs"
 "Assets/Scripts/PoolOfObjects.cs"
 -langversion:9.0
 
