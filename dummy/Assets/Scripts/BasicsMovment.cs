@@ -9,7 +9,7 @@ public class BasicsMovment : MonoBehaviour
     [SerializeField] bool isUsePhysics = true;
     void Start()
     {
-        
+        //GameObject g = ;
     }
 
     // Update is called once per frame
