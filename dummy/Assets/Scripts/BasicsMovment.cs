@@ -1,12 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.PlayerLoop;
 
 public class BasicsMovment : MonoBehaviour
 {
     [SerializeField] float speed;
     [SerializeField] bool isUsePhysics = true;
+    [SerializeField] GameObject bullet;
     void Start()
     {
         //GameObject g = ;
@@ -19,11 +22,15 @@ public class BasicsMovment : MonoBehaviour
             UsePosition();
         else
             UsePhy();
-        if (Input.GetKey(KeyCode.Space))
+/*        if (Input.GetKey(KeyCode.Space))
             Camera.main.transform.position = transform.position + new Vector3(0,10f,-5f);
-        Camera.main.transform.LookAt(transform.position);
+        Camera.main.transform.LookAt(transform.position);*/
     }
-
+    void Update() 
+    {
+        if (Input.GetMouseButtonDown(0))
+            shoot();
+    }
 
     void UsePosition() 
     {
@@ -50,5 +57,13 @@ public class BasicsMovment : MonoBehaviour
             transform.GetComponent<Rigidbody>().AddForce(-speed * 100, 0, 0);
         if (Input.GetKey(KeyCode.D))
             transform.GetComponent<Rigidbody>().AddForce(speed * 100, 0, 0);
+    }
+
+
+
+
+    void shoot() 
+    { 
+        Instantiate(bullet,transform.position+ Vector3.forward,bullet.transform.rotation);
     }
 }
