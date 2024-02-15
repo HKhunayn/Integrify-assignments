@@ -16,9 +16,14 @@ public class Bullet : MonoBehaviour
 
     void OnCollisionEnter(Collision C)
     {
-        if (C.gameObject.tag == "Destroyable") 
+        if (C.gameObject.tag == "Destroyable")
         {
             Destroy(C.gameObject);
+            Destroy(gameObject);
+        }
+        else if (C.gameObject.CompareTag("Player")) 
+        {
+            Debug.Log("You dead");
             Destroy(gameObject);
         }
             
