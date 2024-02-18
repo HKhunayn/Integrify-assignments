@@ -391,10 +391,15 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2023.2.9f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
 "Assets/LittleFightSystem.cs"
 "Assets/RandomTest.cs"
+"Assets/RotateMe.cs"
 "Assets/Scripts/BasicsMovment.cs"
 "Assets/Scripts/Bullet.cs"
+"Assets/Scripts/GUIManger.cs"
 "Assets/Scripts/NewBehaviourScript.cs"
 "Assets/Scripts/PoolOfObjects.cs"
+"Assets/Scripts/Test/MoveME.cs"
+"Assets/Scripts/Test/PeformenceMesure.cs"
+"Assets/Scripts/Test/PlayerController.cs"
 "Assets/timeTesting.cs"
 -langversion:9.0
 
