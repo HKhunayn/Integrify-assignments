@@ -6,6 +6,7 @@ using static UnityEngine.GraphicsBuffer;
 public class LittleFightSystem : MonoBehaviour
 {
     [SerializeField] GameObject bullet;
+    [SerializeField] EnemyData enemyData;
     Coroutine coroutine;
     void OnTriggerStay(Collider other) 
     {
@@ -40,12 +41,17 @@ public class LittleFightSystem : MonoBehaviour
     {
         while (true) 
         {
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(enemyData.Delay);
             //transform.parent.LookAt(target);
             Vector3 pos = transform.parent.position + Vector3.forward;
             pos = 3* pos.normalized + transform.parent.position;
             GameObject g = Instantiate(bullet, pos, bullet.transform.rotation);
             g.transform.LookAt(target.position);
+
+            g.GetComponent<Bullet>().speed = enemyData.BulletSpeed;
+            Vector3 dir = target.position - transform.position;
+            dir.Normalize();
+            g.GetComponent<Bullet>().Direction = dir;
         }
     }
 

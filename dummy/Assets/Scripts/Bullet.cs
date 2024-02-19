@@ -6,13 +6,15 @@ using UnityEngine.SceneManagement;
 
 public class Bullet : MonoBehaviour
 {
-    [SerializeField] float speed= 500;
+    public float speed= 500;
+    public Vector3 Direction = Vector3.forward;
     // Start is called before the first frame update
-    void Start()
+    IEnumerator Start()
     {
+        yield return new WaitForEndOfFrame(); 
         Destroy(gameObject,5f);
         //GetComponent<Rigidbody>().AddForce(Vector3.forward * speed,ForceMode.Acceleration);
-        GetComponent<Rigidbody>().velocity= Vector3.forward*speed;
+        GetComponent<Rigidbody>().velocity= Direction * speed;
         
     }
 

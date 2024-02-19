@@ -394,6 +394,7 @@
 "Assets/RotateMe.cs"
 "Assets/Scripts/BasicsMovment.cs"
 "Assets/Scripts/Bullet.cs"
+"Assets/Scripts/EnemyData.cs"
 "Assets/Scripts/GUIManger.cs"
 "Assets/Scripts/NewBehaviourScript.cs"
 "Assets/Scripts/PoolOfObjects.cs"

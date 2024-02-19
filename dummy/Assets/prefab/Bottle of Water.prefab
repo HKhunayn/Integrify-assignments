@@ -20,7 +20,7 @@ GameObject:
   m_TagString: Destroyable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &3998523159577952872
 Transform:
@@ -4407,6 +4407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 4568449376371950450, guid: d3077e646853aea44bc68f32498304ba, type: 3}
+  enemyData: {fileID: 11400000, guid: 40129a48e1102d74db5831e9e0033339, type: 2}
 --- !u!1 &8705767612697606665
 GameObject:
   m_ObjectHideFlags: 0
