@@ -23,7 +23,7 @@ public class Bullet : MonoBehaviour
         if (C.gameObject.tag == "Destroyable")
         {
             // death
-            GUIManger.AddScore(1);
+            GUIManger.Instance.AddScore(1);
             Destroy(C.gameObject);
             Destroy(gameObject);
         }
