@@ -784,15 +784,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 4912158914003319768, guid: b845fb7bf320f7b4aac8ad7765c651f6, type: 3}
-  numberOfObjects: 100
-  timeBetweenObjects: 0.1
+  numberOfObjects: 50
+  timeBetweenObjects: 0.05
   pos:
-  - {x: -5, y: 3, z: 8}
-  - {x: 6, y: 5, z: 3}
-  - {x: 0, y: 0, z: 0}
-  - {x: -4, y: 3, z: 4}
-  - {x: 8, y: 1, z: -3}
-  - {x: 0, y: 0, z: 0}
+  - {x: 5, y: 1, z: 5}
+  - {x: 5, y: 1, z: -5}
+  - {x: -5, y: 1, z: -5}
+  - {x: -5, y: 1, z: 5}
   speed: 0.1
   delay: 0.05
   motion: 0

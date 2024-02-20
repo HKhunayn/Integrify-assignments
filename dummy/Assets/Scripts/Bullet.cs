@@ -29,7 +29,7 @@ public class Bullet : MonoBehaviour
         }
         else if (C.gameObject.CompareTag("Player")) 
         {
-            SceneManager.LoadScene(SceneManager.GetSceneByBuildIndex(0).name);
+            SceneLoader.Instance.LoadScene(SceneManager.GetSceneByBuildIndex(0).name);
             Debug.Log("You dead");
             Destroy(gameObject);
         }

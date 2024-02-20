@@ -38,9 +38,9 @@ public class GUIManger : MonoBehaviour
             instance = null;
     }
 
-    public void AddScore(int score) 
+    public void AddScore(int additionScore) 
     {
-        score++;
+        score+= additionScore;
         UpdateScore();
     }
 
