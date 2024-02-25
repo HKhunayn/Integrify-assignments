@@ -7,6 +7,8 @@ public class LittleFightSystem : MonoBehaviour
 {
     [SerializeField] GameObject bullet;
     [SerializeField] EnemyData enemyData;
+    [SerializeField] bool flolowingTheTarget = false;
+    [SerializeField] bool LookAtTheTarget = true;
     Coroutine coroutine;
     void OnTriggerStay(Collider other) 
     {
@@ -17,8 +19,8 @@ public class LittleFightSystem : MonoBehaviour
 
             var targetPos = other.transform.position;
             targetPos.y = transform.parent.position.y;
-
-            transform.parent.LookAt(targetPos);
+            if (LookAtTheTarget)
+                transform.parent.LookAt(targetPos);
             //transform.parent.Rotate(new Vector3(-transform.parent.rotation.x,0,0));
             //Debug.Log(transform.parent.name);
         }
@@ -43,15 +45,13 @@ public class LittleFightSystem : MonoBehaviour
         {
             yield return new WaitForSeconds(enemyData.Delay);
             //transform.parent.LookAt(target);
-            Vector3 pos = transform.parent.position + Vector3.forward;
-            pos = 3* pos.normalized + transform.parent.position;
+            Vector3 pos = transform.parent.position + (target.position- transform.parent.position).normalized;
             GameObject g = Instantiate(bullet, pos, bullet.transform.rotation);
-            g.transform.LookAt(target.position);
-
-            g.GetComponent<Bullet>().speed = enemyData.BulletSpeed;
-            Vector3 dir = target.position - transform.position;
-            dir.Normalize();
-            g.GetComponent<Bullet>().Direction = dir;
+            //g.transform.LookAt(target.position);
+            if (flolowingTheTarget)
+                g.GetComponent<Bullet>().SetTarget(target, enemyData.BulletSpeed);
+            else
+                g.GetComponent<Bullet>().SetDirection((target.position - transform.parent.position), enemyData.BulletSpeed);
         }
     }
 
