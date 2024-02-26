@@ -400,13 +400,16 @@
 "Assets/Scripts/EnemyData.cs"
 "Assets/Scripts/GUIManger.cs"
 "Assets/Scripts/MathTesting.cs"
+"Assets/Scripts/MovmentController.cs"
 "Assets/Scripts/NewBehaviourScript.cs"
 "Assets/Scripts/PoolOfObjects.cs"
+"Assets/Scripts/RayCastTesting.cs"
 "Assets/Scripts/SceneLoader.cs"
 "Assets/Scripts/Test/MoveME.cs"
 "Assets/Scripts/Test/PeformenceMesure.cs"
 "Assets/Scripts/Test/PlayerController.cs"
 "Assets/Scripts/Test/Test2.cs"
+"Assets/Scripts/WhatAmClickingAt.cs"
 "Assets/timeTesting.cs"
 -langversion:9.0
 
