@@ -7,13 +7,23 @@ public class MovmentController : MonoBehaviour
 {
     [SerializeField] bool isFirstPersionShooter = true;
     [SerializeField] float speed=5f;
-    [SerializeField] float camSpeed = 0.1f;
+    [SerializeField] float jumpPower = 100;
+    [SerializeField] float mouseSensitivity = 0.1f;
+    [SerializeField] Camera firstPersionShooter;
     [SerializeField] Camera thirdPersionShooter;
     [SerializeField] float maxPitch = 90;
+    float x, y;
+    Vector3[]initRotation;
     Rigidbody rb;
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        initRotation = new Vector3[] {firstPersionShooter.transform.eulerAngles, thirdPersionShooter.transform.eulerAngles };
+        if (isFirstPersionShooter)
+            firstPersionShooter.gameObject.SetActive(true);
+        else
+            thirdPersionShooter.gameObject.SetActive(true);
+
     }
 
     // Update is called once per frame
@@ -23,15 +33,27 @@ public class MovmentController : MonoBehaviour
         Vector3 v;
         float vir = Convert.ToInt32(Input.GetKey(KeyCode.W)) - Convert.ToInt32(Input.GetKey(KeyCode.S));
         float her = Convert.ToInt32(Input.GetKey(KeyCode.D)) - Convert.ToInt32(Input.GetKey(KeyCode.A));
-        v = ((vir * transform.forward) + (her * transform.right)) * speed;
+        v = ((vir * transform.forward) + (her * transform.right)).normalized * speed * Time.deltaTime;
         rb.velocity += v;
 
+        // jump 
+        if (Input.GetKeyDown(KeyCode.Space))
+            rb.AddForce(Vector3.up*jumpPower,ForceMode.Impulse);
+
         // rotation
-        Vector3 rotationDirection = new Vector3(Input.mousePositionDelta.y, Input.mousePositionDelta.x,0);
-        transform.rotation = Quaternion.EulerAngles(rotationDirection + transform.rotation.ToEulerAngles());
-        transform.rotation.SetEulerAngles(transform.rotation.x, transform.rotation.y, 0);
+        x-= Input.GetAxis("Mouse Y") * mouseSensitivity;
+        y+= Input.GetAxis("Mouse X") * mouseSensitivity;
+        x = Mathf.Clamp(x, -maxPitch, maxPitch);
+
+        transform.rotation = Quaternion.Euler(0,y,0);
+
+        GetCurrentCamera().transform.rotation = Quaternion.Euler(x,y,0);
+
+
+        //transform.rotation = ClampRotation(GetCurrentCamera().transform.rotation,new Vector3(transform.));
+
         // apply the maxPitch
-        transform.rotation = ClampRotation(transform.rotation, new Vector3(maxPitch, 180, 2f));
+        //GetCurrentCamera().transform.rotation = ClampRotation(transform.rotation, new Vector3(maxPitch, 180, 2f));
     }
 
 
@@ -55,5 +77,11 @@ public class MovmentController : MonoBehaviour
         q.z = Mathf.Tan(0.5f * Mathf.Deg2Rad * angleZ);
 
         return q.normalized;
+    }
+
+
+    Camera GetCurrentCamera() 
+    {
+        return isFirstPersionShooter ? firstPersionShooter : thirdPersionShooter;
     }
 }

@@ -123,8 +123,10 @@
 -define:ENABLE_LEGACY_INPUT_MANAGER
 -define:TEXTCORE_FONT_ENGINE_1_5_OR_NEWER
 -define:TEXTCORE_TEXT_ENGINE_1_5_OR_NEWER
+-define:DOTWEEN
 -define:CSHARP_7_OR_LATER
 -define:CSHARP_7_3_OR_NEWER
+-r:"Assets/Plugins/Demigiant/DOTween/DOTween.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2023.2.9f1/Editor/Data/Managed/UnityEngine/UnityEditor.AccessibilityModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2023.2.9f1/Editor/Data/Managed/UnityEngine/UnityEditor.AdaptivePerformanceModule.dll"
 -r:"C:/Program Files/Unity/Hub/Editor/2023.2.9f1/Editor/Data/Managed/UnityEngine/UnityEditor.CoreModule.dll"
@@ -360,6 +362,7 @@
 -r:"Library/PackageCache/com.unity.ext.nunit@2.0.5/net40/unity-custom/nunit.framework.dll"
 -r:"Library/PackageCache/com.unity.testtools.codecoverage@1.2.5/lib/ReportGenerator/ReportGeneratorMerged.dll"
 -r:"Library/PackageCache/com.unity.visualscripting@1.8.0/Runtime/VisualScripting.Flow/Dependencies/NCalc/Unity.VisualScripting.Antlr3.Runtime.dll"
+-r:"Library/Bee/artifacts/1900b0aE.dag/Assembly-CSharp-firstpass.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.2D.Sprite.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.EditorCoroutines.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.Performance.Profile-Analyzer.Editor.ref.dll"
@@ -397,6 +400,7 @@
 "Assets/Scripts/BasicsMovment.cs"
 "Assets/Scripts/Bullet.cs"
 "Assets/Scripts/CorotineTesting.cs"
+"Assets/Scripts/DoTweenExample.cs"
 "Assets/Scripts/EnemyData.cs"
 "Assets/Scripts/GUIManger.cs"
 "Assets/Scripts/MathTesting.cs"
