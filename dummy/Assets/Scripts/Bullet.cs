@@ -48,7 +48,10 @@ public class Bullet : MonoBehaviour
         }
             
     }
-
+    private void FixedUpdate()
+    {
+        rb.velocity = Direction;
+    }
     IEnumerator IShoot() 
     {
         while (true) 

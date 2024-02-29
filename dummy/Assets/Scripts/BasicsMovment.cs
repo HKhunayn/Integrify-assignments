@@ -8,35 +8,39 @@ using UnityEngine.PlayerLoop;
 
 public class BasicsMovment : MonoBehaviour
 {
-    [SerializeField] float speed= 5;
+    [SerializeField] float movmentSpeed= 4.5f;
+    [SerializeField] float shiftspeedMultiplier= 1.3f;
     [SerializeField] float rotationSpeed=5;
     [SerializeField] bool isUsePhysics = true;
     [SerializeField] GameObject bullet;
+    [SerializeField]Animator animator;
+    Rigidbody rb;
     void Start()
     {
         //GameObject g = ;
+        //animator =  GetComponent<Animator>();
+        rb=GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
         Vector3 v;
+        float speed = movmentSpeed * (Input.GetKey(KeyCode.LeftShift)? shiftspeedMultiplier:1f);
         float vir = Convert.ToInt32(Input.GetKey(KeyCode.W)) - Convert.ToInt32(Input.GetKey(KeyCode.S));
         float her = Convert.ToInt32(Input.GetKey(KeyCode.D)) - Convert.ToInt32(Input.GetKey(KeyCode.A));
-        v = ((vir * transform.forward) + (her * transform.right)) * speed;
-        if (!isUsePhysics)
-            transform.position += v;
-        else
-            transform.GetComponent<Rigidbody>().velocity = v;
-        /*        if (Input.GetKey(KeyCode.Space))
-                    Camera.main.transform.position = transform.position + new Vector3(0,10f,-5f);
-                Camera.main.transform.LookAt(transform.position);*/
+        v = ((vir * transform.forward) + (her * transform.right)).normalized * speed;
+        rb.velocity = new Vector3(v.x,rb.velocity.y,v.z);
+
+        animator.SetFloat("forward", vir*speed);
+        animator.SetFloat("right", her);
+
         transform.Rotate(Vector3.up * rotationSpeed * Input.mousePositionDelta.x);
     }
     void Update() 
     {
         if (Input.GetMouseButtonDown(0))
-            shoot();
+            StartCoroutine(IShoot());
     }
 
 /*    void UsePosition() 
@@ -69,10 +73,20 @@ public class BasicsMovment : MonoBehaviour
 
 
 
-    void shoot() 
-    { 
-        GameObject g= Instantiate(bullet,transform.position+ transform.forward,transform.rotation);
+    public void Shoot(Vector3 pos) 
+    {
+        
+        
+        GameObject g= Instantiate(bullet,pos,transform.rotation);
         
         g.GetComponent<Bullet>().Direction = transform.forward;
+        //StartCoroutine(IShoot());
+    }
+
+    IEnumerator IShoot() 
+    {
+        animator.SetBool("isShooting", true);
+        yield return null;
+        animator.SetBool("isShooting", false);
     }
 }
