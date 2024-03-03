@@ -14,32 +14,46 @@ public class BasicsMovment : MonoBehaviour
     [SerializeField] bool isUsePhysics = true;
     [SerializeField] GameObject bullet;
     [SerializeField]Animator animator;
+    PlayerActions playeraction;
     Rigidbody rb;
-    void Start()
+    void Awake()
     {
         //GameObject g = ;
         //animator =  GetComponent<Animator>();
-        rb=GetComponent<Rigidbody>();
+        playeraction = new PlayerActions();
+        playeraction.Enable();
+        rb =GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+
+        // MOVEMENT
+
         Vector3 v;
-        float speed = movmentSpeed * (Input.GetKey(KeyCode.LeftShift)? shiftspeedMultiplier:1f);
-        float vir = Convert.ToInt32(Input.GetKey(KeyCode.W)) - Convert.ToInt32(Input.GetKey(KeyCode.S));
-        float her = Convert.ToInt32(Input.GetKey(KeyCode.D)) - Convert.ToInt32(Input.GetKey(KeyCode.A));
-        v = ((vir * transform.forward) + (her * transform.right)).normalized * speed;
+        //float vir = Convert.ToInt32(Input.GetKey(KeyCode.W)) - Convert.ToInt32(Input.GetKey(KeyCode.S));
+        //float her = Convert.ToInt32(Input.GetKey(KeyCode.D)) - Convert.ToInt32(Input.GetKey(KeyCode.A));
+        Vector2 movement = playeraction.Movement.Move.ReadValue<Vector2>();
+        v = ((movement.y * transform.forward) + (movement.x * transform.right)).normalized * movmentSpeed;
+        if (movement.y >= 1 && playeraction.Movement.Sprint.IsPressed()) 
+        {
+            v *= shiftspeedMultiplier;
+        }
         rb.velocity = new Vector3(v.x,rb.velocity.y,v.z);
 
-        animator.SetFloat("forward", vir*speed);
-        animator.SetFloat("right", her);
 
+        // ANIMATION
+        animator.SetFloat("forward", movement.y);
+        animator.SetFloat("right", movement.x);
+
+
+        //ROTATION
         transform.Rotate(Vector3.up * rotationSpeed * Input.mousePositionDelta.x);
     }
     void Update() 
     {
-        if (Input.GetMouseButtonDown(0))
+        if (playeraction.Fight.Fire.IsPressed())
             StartCoroutine(IShoot());
     }
 
