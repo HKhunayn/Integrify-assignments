@@ -15,7 +15,7 @@ C:/Users/Haaas/Integrify-assignments/dummy
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-49813
+54257
 -job-worker-count
 3
 -background-job-worker-count
@@ -58,12 +58,12 @@ C:/Users/Haaas/Integrify-assignments/dummy
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [6412] Host "[IP] 192.168.8.165 [Port] 0 [Flags] 2 [Guid] 290553846 [EditorId] 290553846 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-MS6F34P) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
-Player connection [6412] Host "[IP] 192.168.8.165 [Port] 0 [Flags] 2 [Guid] 290553846 [EditorId] 290553846 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-MS6F34P) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [9412] Host "[IP] 192.168.46.229 [Port] 0 [Flags] 2 [Guid] 3922125998 [EditorId] 3922125998 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-MS6F34P) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [9412] Host "[IP] 192.168.46.229 [Port] 0 [Flags] 2 [Guid] 3922125998 [EditorId] 3922125998 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-MS6F34P) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 3
 [Physics::Module] Initialized MultithreadedJobDispatcher with 3 workers.
 Library Redirect Path: Library/
-Refreshing native plugins compatible for Editor in 4.49 ms, found 3 plugins.
+Refreshing native plugins compatible for Editor in 4.27 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2023.2.9f1 (0c9c2e1f4bef)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2023.2.9f1/Editor/Data/Resources/UnitySubsystems
@@ -79,7 +79,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2023.2.9f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2023.2.9f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2023.2.9f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56644
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56060
 Begin MonoManager ReloadAssembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
@@ -94,42 +94,42 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.9f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2023.2.9f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.006593 seconds.
-- Loaded All Assemblies, in  0.690 seconds
+Registered in 0.056094 seconds.
+- Loaded All Assemblies, in  1.707 seconds
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-- Finished resetting the current domain, in  0.663 seconds
-Domain Reload Profiling: 1351ms
-	BeginReloadAssembly (213ms)
+- Finished resetting the current domain, in  0.905 seconds
+Domain Reload Profiling: 2605ms
+	BeginReloadAssembly (659ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (61ms)
-	RebuildNativeTypeToScriptingClass (19ms)
-	initialDomainReloadingComplete (97ms)
-	LoadAllAssembliesAndSetupDomain (297ms)
-		LoadAssemblies (209ms)
+		CreateAndSetChildDomain (2ms)
+	RebuildCommonClasses (179ms)
+	RebuildNativeTypeToScriptingClass (56ms)
+	initialDomainReloadingComplete (283ms)
+	LoadAllAssembliesAndSetupDomain (522ms)
+		LoadAssemblies (645ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (293ms)
-			TypeCache.Refresh (291ms)
-				TypeCache.ScanAssembly (270ms)
+		AnalyzeDomain (485ms)
+			TypeCache.Refresh (482ms)
+				TypeCache.ScanAssembly (440ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (1ms)
-	FinalizeReload (664ms)
+	FinalizeReload (905ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (560ms)
+		SetupLoadedEditorAssemblies (752ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (14ms)
-			SetLoadedEditorAssemblies (8ms)
-			BeforeProcessingInitializeOnLoad (14ms)
-			ProcessInitializeOnLoadAttributes (422ms)
-			ProcessInitializeOnLoadMethodAttributes (102ms)
+			InitializePlatformSupportModulesInManaged (31ms)
+			SetLoadedEditorAssemblies (13ms)
+			BeforeProcessingInitializeOnLoad (25ms)
+			ProcessInitializeOnLoadAttributes (568ms)
+			ProcessInitializeOnLoadMethodAttributes (115ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -152,333 +152,577 @@ C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
 Symbol file LoadedFromMemory doesn't match image C:\Users\Haaas\Integrify-assignments\dummy\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\Haaas\Integrify-assignments\dummy\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.793 seconds
-Refreshing native plugins compatible for Editor in 1.61 ms, found 3 plugins.
+- Loaded All Assemblies, in  2.737 seconds
+Refreshing native plugins compatible for Editor in 3.71 ms, found 3 plugins.
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.177 seconds
-Domain Reload Profiling: 2966ms
-	BeginReloadAssembly (594ms)
+- Finished resetting the current domain, in  1.705 seconds
+Domain Reload Profiling: 4415ms
+	BeginReloadAssembly (943ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (9ms)
+		DisableScriptedObjects (13ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (49ms)
-	RebuildCommonClasses (135ms)
-	RebuildNativeTypeToScriptingClass (39ms)
-	initialDomainReloadingComplete (85ms)
-	LoadAllAssembliesAndSetupDomain (935ms)
-		LoadAssemblies (591ms)
+		CreateAndSetChildDomain (63ms)
+	RebuildCommonClasses (83ms)
+	RebuildNativeTypeToScriptingClass (32ms)
+	initialDomainReloadingComplete (81ms)
+	LoadAllAssembliesAndSetupDomain (1570ms)
+		LoadAssemblies (1413ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (523ms)
-			TypeCache.Refresh (433ms)
-				TypeCache.ScanAssembly (404ms)
-			BuildScriptInfoCaches (68ms)
-			ResolveRequiredComponents (15ms)
-	FinalizeReload (1177ms)
+		AnalyzeDomain (402ms)
+			TypeCache.Refresh (340ms)
+				TypeCache.ScanAssembly (317ms)
+			BuildScriptInfoCaches (51ms)
+			ResolveRequiredComponents (8ms)
+	FinalizeReload (1706ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (853ms)
+		SetupLoadedEditorAssemblies (1213ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (86ms)
-			ProcessInitializeOnLoadAttributes (711ms)
-			ProcessInitializeOnLoadMethodAttributes (38ms)
-			AfterProcessingInitializeOnLoad (7ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (8ms)
+			BeforeProcessingInitializeOnLoad (111ms)
+			ProcessInitializeOnLoadAttributes (1031ms)
+			ProcessInitializeOnLoadMethodAttributes (46ms)
+			AfterProcessingInitializeOnLoad (9ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (17ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.02 seconds
-Refreshing native plugins compatible for Editor in 1.27 ms, found 3 plugins.
+		AwakeInstancesAfterBackupRestoration (24ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 2.86 ms, found 3 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3995 unused Assets / (1.6 MB). Loaded Objects now: 4621.
-Memory consumption went from 142.4 MB to 140.8 MB.
-Total: 11.746800 ms (FindLiveObjects: 0.765600 ms CreateObjectMapping: 1.132500 ms MarkObjects: 7.277500 ms  DeleteObjects: 2.569500 ms)
-
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-Symbol file LoadedFromMemory doesn't match image C:\Users\Haaas\Integrify-assignments\dummy\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\Haaas\Integrify-assignments\dummy\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.748 seconds
-Refreshing native plugins compatible for Editor in 3.54 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.867 seconds
-Domain Reload Profiling: 3604ms
-	BeginReloadAssembly (449ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (8ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (87ms)
-	RebuildCommonClasses (118ms)
-	RebuildNativeTypeToScriptingClass (44ms)
-	initialDomainReloadingComplete (81ms)
-	LoadAllAssembliesAndSetupDomain (1044ms)
-		LoadAssemblies (884ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (429ms)
-			TypeCache.Refresh (12ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (392ms)
-			ResolveRequiredComponents (16ms)
-	FinalizeReload (1868ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1260ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (9ms)
-			SetLoadedEditorAssemblies (8ms)
-			BeforeProcessingInitializeOnLoad (131ms)
-			ProcessInitializeOnLoadAttributes (1023ms)
-			ProcessInitializeOnLoadMethodAttributes (74ms)
-			AfterProcessingInitializeOnLoad (15ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (33ms)
-Refreshing native plugins compatible for Editor in 3.79 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3993 unused Assets / (1.0 MB). Loaded Objects now: 4621.
-Memory consumption went from 134.6 MB to 133.6 MB.
-Total: 10.192100 ms (FindLiveObjects: 1.185800 ms CreateObjectMapping: 0.841500 ms MarkObjects: 6.396400 ms  DeleteObjects: 1.765400 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-========================================================================
-Received Import Request.
-  Time since last request: 26120.927178 seconds.
-  path: Assets/prefab/Joint Cube.prefab
-  artifactKey: Guid(3f1e18e2d3f678f48a4f76f5f9aba2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/prefab/Joint Cube.prefab using Guid(3f1e18e2d3f678f48a4f76f5f9aba2c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7cabad93fb3ea582cbf6a4ba2bbb2eb8') in 0.2460428 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 9
+Unloading 3995 unused Assets / (1.3 MB). Loaded Objects now: 4621.
+Memory consumption went from 142.3 MB to 141.1 MB.
+Total: 10.164500 ms (FindLiveObjects: 1.203800 ms CreateObjectMapping: 0.723500 ms MarkObjects: 6.740200 ms  DeleteObjects: 1.495200 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 131.982454 seconds.
-  path: Assets/Scenes/NaveMesh
-  artifactKey: Guid(78f4017780c23cd4284b86e1605ad5a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/NaveMesh using Guid(78f4017780c23cd4284b86e1605ad5a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c258055cec14bcb76229208a9ca33b1e') in 0.0017228 seconds
-Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.118828 seconds.
-  path: Assets/Scenes/NaveMesh/NavMesh-Map.asset
-  artifactKey: Guid(4816126de75524349867b4f4b9fa7432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/NaveMesh/NavMesh-Map.asset using Guid(4816126de75524349867b4f4b9fa7432) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'b56bb1f493b2012e428a0b46fe9051aa') in 0.0047936 seconds
+  Time since last request: 96479.698940 seconds.
+  path: Assets/Scenes/New Lighting Settings.lighting
+  artifactKey: Guid(f5753edb91d96114c9cb7a7ccc12e4bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/New Lighting Settings.lighting using Guid(f5753edb91d96114c9cb7a7ccc12e4bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '986b17047c916f0d8a584c862b4d7a43') in 0.9744008 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.775885 seconds.
-  path: Assets/Scenes/NaveMesh.unity
-  artifactKey: Guid(9cf489d39f294714b949341a6f0846c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/NaveMesh.unity using Guid(9cf489d39f294714b949341a6f0846c6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6cd0e7c34fc009e58ce0cf54dd5f0a6f') in 0.0078354 seconds
+  Time since last request: 2020.779996 seconds.
+  path: Assets/Scenes/Lighting
+  artifactKey: Guid(372f1d7dbb4dbef48b4d44c52ce2e432) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting using Guid(372f1d7dbb4dbef48b4d44c52ce2e432) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'e9f9dbc2bbf8cbd2db2bd64e9f816e07') in 0.0780932 seconds
 Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 0
 
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-Symbol file LoadedFromMemory doesn't match image C:\Users\Haaas\Integrify-assignments\dummy\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\Haaas\Integrify-assignments\dummy\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  1.103 seconds
-Refreshing native plugins compatible for Editor in 3.76 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.430 seconds
-Domain Reload Profiling: 3534ms
-	BeginReloadAssembly (353ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (69ms)
-	RebuildCommonClasses (77ms)
-	RebuildNativeTypeToScriptingClass (19ms)
-	initialDomainReloadingComplete (47ms)
-	LoadAllAssembliesAndSetupDomain (606ms)
-		LoadAssemblies (539ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (238ms)
-			TypeCache.Refresh (9ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (217ms)
-			ResolveRequiredComponents (8ms)
-	FinalizeReload (2431ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1622ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (14ms)
-			SetLoadedEditorAssemblies (16ms)
-			BeforeProcessingInitializeOnLoad (173ms)
-			ProcessInitializeOnLoadAttributes (1327ms)
-			ProcessInitializeOnLoadMethodAttributes (74ms)
-			AfterProcessingInitializeOnLoad (17ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (36ms)
-Refreshing native plugins compatible for Editor in 6.90 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3993 unused Assets / (189.1 KB). Loaded Objects now: 4632.
-Memory consumption went from 137.2 MB to 137.1 MB.
-Total: 32.936100 ms (FindLiveObjects: 2.261900 ms CreateObjectMapping: 1.990900 ms MarkObjects: 16.899100 ms  DeleteObjects: 11.781600 ms)
+Received Import Request.
+  Time since last request: 0.003810 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-0_comp_light.exr
+  artifactKey: Guid(456e79856d1e66b4c8a25e4b30b9997a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-0_comp_light.exr using Guid(456e79856d1e66b4c8a25e4b30b9997a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f838f0595d64b46af435702471722b4e') in 1.1651017 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-Symbol file LoadedFromMemory doesn't match image C:\Users\Haaas\Integrify-assignments\dummy\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\Haaas\Integrify-assignments\dummy\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.877 seconds
-Refreshing native plugins compatible for Editor in 1.40 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.780 seconds
-Domain Reload Profiling: 2656ms
-	BeginReloadAssembly (254ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (6ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (61ms)
-	RebuildCommonClasses (45ms)
-	RebuildNativeTypeToScriptingClass (18ms)
-	initialDomainReloadingComplete (36ms)
-	LoadAllAssembliesAndSetupDomain (523ms)
-		LoadAssemblies (426ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (232ms)
-			TypeCache.Refresh (10ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (208ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (1780ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1279ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
-			SetLoadedEditorAssemblies (5ms)
-			BeforeProcessingInitializeOnLoad (81ms)
-			ProcessInitializeOnLoadAttributes (1111ms)
-			ProcessInitializeOnLoadMethodAttributes (61ms)
-			AfterProcessingInitializeOnLoad (17ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (34ms)
-Refreshing native plugins compatible for Editor in 2.45 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3993 unused Assets / (1.6 MB). Loaded Objects now: 4632.
-Memory consumption went from 139.2 MB to 137.6 MB.
-Total: 13.485700 ms (FindLiveObjects: 0.878800 ms CreateObjectMapping: 0.580100 ms MarkObjects: 8.717900 ms  DeleteObjects: 3.305900 ms)
+Received Import Request.
+  Time since last request: 0.000076 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-0_comp_dir.png
+  artifactKey: Guid(11fa26dfb217b17428767f009ba6d9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-0_comp_dir.png using Guid(11fa26dfb217b17428767f009ba6d9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6e2c6a6c44d5a427198d22a68576880e') in 0.05827 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
-Prepare: number of updated asset objects reloaded= 0
 ========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-C:\build\output\Unity-Technologies\mono\mono\metadata\icall.c:1842:
-Symbol file LoadedFromMemory doesn't match image C:\Users\Haaas\Integrify-assignments\dummy\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\Haaas\Integrify-assignments\dummy\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.817 seconds
-Refreshing native plugins compatible for Editor in 0.96 ms, found 3 plugins.
-Native extension for WindowsStandalone target not found
-Native extension for WebGL target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  1.788 seconds
-Domain Reload Profiling: 2607ms
-	BeginReloadAssembly (259ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (9ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (60ms)
-	RebuildCommonClasses (44ms)
-	RebuildNativeTypeToScriptingClass (15ms)
-	initialDomainReloadingComplete (30ms)
-	LoadAllAssembliesAndSetupDomain (469ms)
-		LoadAssemblies (381ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (223ms)
-			TypeCache.Refresh (8ms)
-				TypeCache.ScanAssembly (0ms)
-			BuildScriptInfoCaches (202ms)
-			ResolveRequiredComponents (9ms)
-	FinalizeReload (1790ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (1245ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (4ms)
-			SetLoadedEditorAssemblies (6ms)
-			BeforeProcessingInitializeOnLoad (63ms)
-			ProcessInitializeOnLoadAttributes (1095ms)
-			ProcessInitializeOnLoadMethodAttributes (59ms)
-			AfterProcessingInitializeOnLoad (20ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (37ms)
-Refreshing native plugins compatible for Editor in 3.21 ms, found 3 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 3993 unused Assets / (1.5 MB). Loaded Objects now: 4632.
-Memory consumption went from 141.1 MB to 139.7 MB.
-Total: 19.370100 ms (FindLiveObjects: 1.035000 ms CreateObjectMapping: 1.437000 ms MarkObjects: 11.699600 ms  DeleteObjects: 5.194700 ms)
+Received Import Request.
+  Time since last request: 0.000101 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-1_comp_light.exr
+  artifactKey: Guid(78955687dd8aa9d4abb437281e689ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-1_comp_light.exr using Guid(78955687dd8aa9d4abb437281e689ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1839328b30a2af677369d2b2ed7c7ec4') in 0.0751741 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
 
-Prepare: number of updated asset objects reloaded= 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Scenes/Lighting/ReflectionProbe-0.exr
+  artifactKey: Guid(c07a71efa05daf84f8bd0d6740efa0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/ReflectionProbe-0.exr using Guid(c07a71efa05daf84f8bd0d6740efa0ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd6e9cd0cb374fe5597ead900d4c4a7dd') in 0.2804232 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 1
+
+========================================================================
+Received Import Request.
+  Time since last request: 48.822634 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-0_comp_dir.png
+  artifactKey: Guid(11fa26dfb217b17428767f009ba6d9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-0_comp_dir.png using Guid(11fa26dfb217b17428767f009ba6d9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a9da3a78512578e21746b211a353a5f5') in 0.0529533 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000129 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-1_comp_dir.png
+  artifactKey: Guid(f5bcd278199f4124db0e5f9c3b4eab3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-1_comp_dir.png using Guid(f5bcd278199f4124db0e5f9c3b4eab3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9079fc8768715d4a34662d256519695d') in 0.0547851 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000930 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-1_comp_light.exr
+  artifactKey: Guid(78955687dd8aa9d4abb437281e689ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-1_comp_light.exr using Guid(78955687dd8aa9d4abb437281e689ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '31db3bc7b2c052d78e2bbbaca7c8002a') in 0.0391435 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 91.939572 seconds.
+  path: Assets/Scenes/Lighting/LightingData.asset
+  artifactKey: Guid(70b67ba4f8330c44bbe45471ecc6b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/LightingData.asset using Guid(70b67ba4f8330c44bbe45471ecc6b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ba84ecb5580a67e9c2540b7c33244699') in 0.0070218 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-0_comp_light.exr
+  artifactKey: Guid(456e79856d1e66b4c8a25e4b30b9997a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-0_comp_light.exr using Guid(456e79856d1e66b4c8a25e4b30b9997a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '8eed65fbb97fbce28bc0427056b6701c') in 0.0298709 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-2_comp_light.exr
+  artifactKey: Guid(bd1742afd0c5d5f48b973e61aa47120d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-2_comp_light.exr using Guid(bd1742afd0c5d5f48b973e61aa47120d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4268e97f34f3b42ed0e34e2da40d6814') in 0.0199569 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-1_comp_light.exr
+  artifactKey: Guid(78955687dd8aa9d4abb437281e689ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-1_comp_light.exr using Guid(78955687dd8aa9d4abb437281e689ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '19e1924345a8be297d4ec7242a76389b') in 0.0188445 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 24.035825 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-0_comp_dir.png
+  artifactKey: Guid(11fa26dfb217b17428767f009ba6d9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-0_comp_dir.png using Guid(11fa26dfb217b17428767f009ba6d9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '62913f4a101477d4f45d960c40a317f0') in 0.0395588 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-2_comp_light.exr
+  artifactKey: Guid(bd1742afd0c5d5f48b973e61aa47120d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-2_comp_light.exr using Guid(bd1742afd0c5d5f48b973e61aa47120d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f2e2e41c03c7bdfa03d4170d85e33e02') in 0.0607335 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000073 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-1_comp_light.exr
+  artifactKey: Guid(78955687dd8aa9d4abb437281e689ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-1_comp_light.exr using Guid(78955687dd8aa9d4abb437281e689ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3467d506952a6a57a1b5ed0ad43e6100') in 0.036899 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 11.566101 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-0_comp_dir.png
+  artifactKey: Guid(11fa26dfb217b17428767f009ba6d9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-0_comp_dir.png using Guid(11fa26dfb217b17428767f009ba6d9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '473a1f05521321f15a46715e3bd2c066') in 0.0362257 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000083 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-2_comp_light.exr
+  artifactKey: Guid(bd1742afd0c5d5f48b973e61aa47120d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-2_comp_light.exr using Guid(bd1742afd0c5d5f48b973e61aa47120d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7f66890c6aebfad8362b72de933b86bc') in 0.0442563 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000059 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-1_comp_light.exr
+  artifactKey: Guid(78955687dd8aa9d4abb437281e689ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-1_comp_light.exr using Guid(78955687dd8aa9d4abb437281e689ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0b959e62c59b465b2b1493c8c62a5516') in 0.0315705 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 13.354258 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-0_comp_dir.png
+  artifactKey: Guid(11fa26dfb217b17428767f009ba6d9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-0_comp_dir.png using Guid(11fa26dfb217b17428767f009ba6d9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a60713bca89af6c042cb2e1a69180619') in 0.0386629 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-2_comp_light.exr
+  artifactKey: Guid(bd1742afd0c5d5f48b973e61aa47120d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-2_comp_light.exr using Guid(bd1742afd0c5d5f48b973e61aa47120d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '78e9069dfb977b292cbd4a7ea2ed8c26') in 0.0171181 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-1_comp_light.exr
+  artifactKey: Guid(78955687dd8aa9d4abb437281e689ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-1_comp_light.exr using Guid(78955687dd8aa9d4abb437281e689ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9395d84eaafe4f24291cda542f51577e') in 0.0180482 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.023348 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-0_comp_light.exr
+  artifactKey: Guid(456e79856d1e66b4c8a25e4b30b9997a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-0_comp_light.exr using Guid(456e79856d1e66b4c8a25e4b30b9997a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '2c82a68e975cac62b9d4d1cbfcbd9274') in 0.0197129 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 47.674105 seconds.
+  path: Assets/Scenes/Lighting/LightingData.asset
+  artifactKey: Guid(70b67ba4f8330c44bbe45471ecc6b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/LightingData.asset using Guid(70b67ba4f8330c44bbe45471ecc6b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a63c275ce046e96a797a1263a9ac9e5f') in 0.0034153 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-0_comp_light.exr
+  artifactKey: Guid(456e79856d1e66b4c8a25e4b30b9997a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-0_comp_light.exr using Guid(456e79856d1e66b4c8a25e4b30b9997a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7bde783404d3dd424eec1b54e2de89aa') in 0.0411523 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-2_comp_light.exr
+  artifactKey: Guid(bd1742afd0c5d5f48b973e61aa47120d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-2_comp_light.exr using Guid(bd1742afd0c5d5f48b973e61aa47120d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '13a26af09ec90b4391d86f4f061604e1') in 0.0305024 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-1_comp_light.exr
+  artifactKey: Guid(78955687dd8aa9d4abb437281e689ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-1_comp_light.exr using Guid(78955687dd8aa9d4abb437281e689ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '964aab30a602cced3e9aef278e4eae2f') in 0.0292332 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 28.577156 seconds.
+  path: Assets/Scenes/Lighting/LightingData.asset
+  artifactKey: Guid(70b67ba4f8330c44bbe45471ecc6b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/LightingData.asset using Guid(70b67ba4f8330c44bbe45471ecc6b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7ef112706e8307a1493d67971ed4b6c6') in 0.0060301 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000084 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-0_comp_light.exr
+  artifactKey: Guid(456e79856d1e66b4c8a25e4b30b9997a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-0_comp_light.exr using Guid(456e79856d1e66b4c8a25e4b30b9997a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f6f1a631fe46a1df8e9666213e64369c') in 0.0290991 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-2_comp_light.exr
+  artifactKey: Guid(bd1742afd0c5d5f48b973e61aa47120d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-2_comp_light.exr using Guid(bd1742afd0c5d5f48b973e61aa47120d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c69c8fcedd027ff7791f7dce8f306abe') in 0.0335709 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000098 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-1_comp_light.exr
+  artifactKey: Guid(78955687dd8aa9d4abb437281e689ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-1_comp_light.exr using Guid(78955687dd8aa9d4abb437281e689ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '248ead288faf53ab2ed39a41b24c6e79') in 0.0303531 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.922080 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-0_comp_dir.png
+  artifactKey: Guid(11fa26dfb217b17428767f009ba6d9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-0_comp_dir.png using Guid(11fa26dfb217b17428767f009ba6d9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '0b70997b3c6ecc3d5a7927380bebe397') in 0.0385228 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000139 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-2_comp_light.exr
+  artifactKey: Guid(bd1742afd0c5d5f48b973e61aa47120d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-2_comp_light.exr using Guid(bd1742afd0c5d5f48b973e61aa47120d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7b3570cf0aecd284ef5645a760913b29') in 0.0306349 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-2_comp_dir.png
+  artifactKey: Guid(f101942da3c6f4347b85f155fcd1ca7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-2_comp_dir.png using Guid(f101942da3c6f4347b85f155fcd1ca7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5ee5f28f95e3d5e35d32eacf4756c71f') in 0.0306588 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.681260 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-0_comp_dir.png
+  artifactKey: Guid(11fa26dfb217b17428767f009ba6d9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-0_comp_dir.png using Guid(11fa26dfb217b17428767f009ba6d9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5c03bdad38a3f31aad1d9b9fcb0c580a') in 0.032711 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000169 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-2_comp_light.exr
+  artifactKey: Guid(bd1742afd0c5d5f48b973e61aa47120d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-2_comp_light.exr using Guid(bd1742afd0c5d5f48b973e61aa47120d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4fa18ef25873ba8c0c1cae5eaefb2c88') in 0.0352055 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-2_comp_dir.png
+  artifactKey: Guid(f101942da3c6f4347b85f155fcd1ca7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-2_comp_dir.png using Guid(f101942da3c6f4347b85f155fcd1ca7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6b61b7496be25fd922143d303b6c77f8') in 0.0268647 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.730815 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-0_comp_dir.png
+  artifactKey: Guid(11fa26dfb217b17428767f009ba6d9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-0_comp_dir.png using Guid(11fa26dfb217b17428767f009ba6d9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '92c9a1d756e2a7b897e85b8306dab68f') in 0.0349916 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000284 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-2_comp_light.exr
+  artifactKey: Guid(bd1742afd0c5d5f48b973e61aa47120d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-2_comp_light.exr using Guid(bd1742afd0c5d5f48b973e61aa47120d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '4c40a896667ae5c5a02b645d5632061d') in 0.0323927 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-2_comp_dir.png
+  artifactKey: Guid(f101942da3c6f4347b85f155fcd1ca7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-2_comp_dir.png using Guid(f101942da3c6f4347b85f155fcd1ca7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '930ea18d9800af0ec70e762cd73c74d3') in 0.0250278 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.722580 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-0_comp_dir.png
+  artifactKey: Guid(11fa26dfb217b17428767f009ba6d9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-0_comp_dir.png using Guid(11fa26dfb217b17428767f009ba6d9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'da3d225081036d526d5ee28670da4b37') in 0.0372338 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-1_comp_dir.png
+  artifactKey: Guid(f5bcd278199f4124db0e5f9c3b4eab3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-1_comp_dir.png using Guid(f5bcd278199f4124db0e5f9c3b4eab3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '9e555f2612c78ea9073204bd069dcf94') in 0.0345552 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-2_comp_dir.png
+  artifactKey: Guid(f101942da3c6f4347b85f155fcd1ca7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-2_comp_dir.png using Guid(f101942da3c6f4347b85f155fcd1ca7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a8d55241d7a356d9a68a75a36ff87e17') in 0.0294739 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 10.973200 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-0_comp_dir.png
+  artifactKey: Guid(11fa26dfb217b17428767f009ba6d9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-0_comp_dir.png using Guid(11fa26dfb217b17428767f009ba6d9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f5c78a7f574055bdcff0fd3d4a34c1a9') in 0.0316573 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-2_comp_light.exr
+  artifactKey: Guid(bd1742afd0c5d5f48b973e61aa47120d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-2_comp_light.exr using Guid(bd1742afd0c5d5f48b973e61aa47120d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '76c74bfe6c24542b1bab35a08370c84d') in 0.0339319 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-1_comp_light.exr
+  artifactKey: Guid(78955687dd8aa9d4abb437281e689ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-1_comp_light.exr using Guid(78955687dd8aa9d4abb437281e689ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'd7ac715e6b4dd0794dcba6b10b7ba213') in 0.026192 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 5.969848 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-0_comp_dir.png
+  artifactKey: Guid(11fa26dfb217b17428767f009ba6d9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-0_comp_dir.png using Guid(11fa26dfb217b17428767f009ba6d9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '32a064b6d2d12956f647e5ff779009c1') in 0.0360619 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-2_comp_light.exr
+  artifactKey: Guid(bd1742afd0c5d5f48b973e61aa47120d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-2_comp_light.exr using Guid(bd1742afd0c5d5f48b973e61aa47120d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f863f3a8e28e713abb7d26d76d1be0fc') in 0.0323024 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-1_comp_light.exr
+  artifactKey: Guid(78955687dd8aa9d4abb437281e689ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-1_comp_light.exr using Guid(78955687dd8aa9d4abb437281e689ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6a79d846cce85f24ba1928bb1da0494f') in 0.0351402 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 25.234919 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-0_comp_dir.png
+  artifactKey: Guid(11fa26dfb217b17428767f009ba6d9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-0_comp_dir.png using Guid(11fa26dfb217b17428767f009ba6d9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '3abf05478ec4552b949f5a52f16b888b') in 0.0362207 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-2_comp_light.exr
+  artifactKey: Guid(bd1742afd0c5d5f48b973e61aa47120d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-2_comp_light.exr using Guid(bd1742afd0c5d5f48b973e61aa47120d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '089bb2a9e3d34ef0390632b3a8d0527d') in 0.0273649 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-1_comp_light.exr
+  artifactKey: Guid(78955687dd8aa9d4abb437281e689ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-1_comp_light.exr using Guid(78955687dd8aa9d4abb437281e689ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'ec2d382ac2a55cfb89dc33fca9b7f5c6') in 0.0533974 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 12.509269 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-0_comp_dir.png
+  artifactKey: Guid(11fa26dfb217b17428767f009ba6d9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-0_comp_dir.png using Guid(11fa26dfb217b17428767f009ba6d9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a13c3d5acd99d44d6a2477a84ab31e7e') in 0.0388592 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000323 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-2_comp_light.exr
+  artifactKey: Guid(bd1742afd0c5d5f48b973e61aa47120d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-2_comp_light.exr using Guid(bd1742afd0c5d5f48b973e61aa47120d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'c7e781843bd2fcf4f4474a0e43bc015d') in 0.0531179 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000065 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-2_comp_dir.png
+  artifactKey: Guid(f101942da3c6f4347b85f155fcd1ca7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-2_comp_dir.png using Guid(f101942da3c6f4347b85f155fcd1ca7a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '11ce858eb0b0e75d68b71b18ac36f6a5') in 0.030485 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 6.347097 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-0_comp_dir.png
+  artifactKey: Guid(11fa26dfb217b17428767f009ba6d9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-0_comp_dir.png using Guid(11fa26dfb217b17428767f009ba6d9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'a6d54c86699c4c495145fa93ed148fc6') in 0.030508 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-1_comp_dir.png
+  artifactKey: Guid(f5bcd278199f4124db0e5f9c3b4eab3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-1_comp_dir.png using Guid(f5bcd278199f4124db0e5f9c3b4eab3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '01ecd3f89253302dca739c928f191c6e') in 0.0352666 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-1_comp_light.exr
+  artifactKey: Guid(78955687dd8aa9d4abb437281e689ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-1_comp_light.exr using Guid(78955687dd8aa9d4abb437281e689ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'bb0fcbb5a1351259ee4e6934ad2830a2') in 0.0360271 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 7.316605 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-1_comp_dir.png
+  artifactKey: Guid(f5bcd278199f4124db0e5f9c3b4eab3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-1_comp_dir.png using Guid(f5bcd278199f4124db0e5f9c3b4eab3d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '871531b44c4059cb82af6cc8da316cd1') in 0.0287567 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 8.605627 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-0_comp_dir.png
+  artifactKey: Guid(11fa26dfb217b17428767f009ba6d9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-0_comp_dir.png using Guid(11fa26dfb217b17428767f009ba6d9a7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '6cb94791ebb3e016fab3193fb5e93cae') in 0.0365257 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000182 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-2_comp_light.exr
+  artifactKey: Guid(bd1742afd0c5d5f48b973e61aa47120d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-2_comp_light.exr using Guid(bd1742afd0c5d5f48b973e61aa47120d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '589c97b3c05409978138bc9734c7eac4') in 0.0387385 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-1_comp_light.exr
+  artifactKey: Guid(78955687dd8aa9d4abb437281e689ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-1_comp_light.exr using Guid(78955687dd8aa9d4abb437281e689ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: 'f73418ef66b2a0e599c14ae20f450952') in 0.030185 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 50.544608 seconds.
+  path: Assets/Scenes/Lighting/LightingData.asset
+  artifactKey: Guid(70b67ba4f8330c44bbe45471ecc6b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/LightingData.asset using Guid(70b67ba4f8330c44bbe45471ecc6b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '7f511f0dcf944f0c4cf6fa41df9f99e3') in 0.004238 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000085 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-2_comp_light.exr
+  artifactKey: Guid(bd1742afd0c5d5f48b973e61aa47120d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-2_comp_light.exr using Guid(bd1742afd0c5d5f48b973e61aa47120d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '1fb4b1c13af702fdcbe4fec1a867aff2') in 0.0207356 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-1_comp_shadowmask.png
+  artifactKey: Guid(120e9c21ba343b84c8219b9478d24f66) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-1_comp_shadowmask.png using Guid(120e9c21ba343b84c8219b9478d24f66) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '5dd752e6da2e731ab331b228250278dc') in 0.0290161 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Scenes/Lighting/Lightmap-1_comp_light.exr
+  artifactKey: Guid(78955687dd8aa9d4abb437281e689ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Lighting/Lightmap-1_comp_light.exr using Guid(78955687dd8aa9d4abb437281e689ec5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) (PreviewImporter) -> (artifact id: '999e0488a2115c2d082545ee24a7a78d') in 0.0157979 seconds
+Number of updated asset objects reloaded before import = 0Number of asset objects unloaded after import = 2
+
