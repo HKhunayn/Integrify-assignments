@@ -21,5 +21,13 @@ public class Player : Character
     {
         Vector2 movement = InputManager.Instance.GetPlayerMovement();
         Move(movement, m_config.MovementSpeed);
+
+        bool shoot = InputManager.Instance.GetIsPlayerShoot();
+        SetIsShooting(shoot);
     }
+
+/*    public override void SetIsShooting(bool state)
+    {
+        base.SetIsShooting(state);
+    }*/
 }

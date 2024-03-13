@@ -5,10 +5,13 @@ using UnityEngine;
 
 public class Character : MonoBehaviour
 {
+
     private Rigidbody2D m_rigidbody;
     private bool m_isMoving;
+    private bool m_isShooting;
     private Vector2 m_direction;
-
+    public GameObject m_bullet;
+    public CharacterVisual m_characterVisual;
     private void Awake()
     {
         m_rigidbody = GetComponent<Rigidbody2D>();
@@ -26,9 +29,14 @@ public class Character : MonoBehaviour
 
     public bool IsShooting()
     {
-        return false;
+        return m_isShooting;
     }
-
+    public void SetIsShooting(bool state) 
+    {
+        m_isShooting = state;
+        if (state)
+            Shoot();
+    }
     public CharacterWeapon GetWeapon()
     {
         return CharacterWeapon.Rifle;
@@ -42,5 +50,11 @@ public class Character : MonoBehaviour
     public Vector2 GetMovementDirection()
     {
         return m_direction;
+    }
+
+    public void Shoot() 
+    { 
+        Bullet b = Instantiate(m_bullet,transform.position,Quaternion.EulerAngles(m_direction)).GetComponent<Bullet>();
+        b.Init(m_direction);
     }
 }

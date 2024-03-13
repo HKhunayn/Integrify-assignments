@@ -34,4 +34,11 @@ public class InputManager : MonoBehaviour
     {
         return m_inputControls.Movment.Direction.ReadValue<Vector2>();
     }
+
+
+    public bool GetIsPlayerShoot() 
+    {
+        return m_inputControls.Fighting.Shoot.IsPressed();
+    }
+
 }
